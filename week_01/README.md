@@ -9,7 +9,7 @@ The practice for this week takes place in notebooks. Just open them and follow i
 
 Unless explicitly said otherwise, all subsequent weeks follow the same pattern (notebook with instructions).
 
-If you have any difficulties with notebooks, just open them in [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github.com/devsteppe/Python-Intro-to-DS/blob/master/week_01/seminar.ipynb).
+If you have any difficulties with notebooks, just open them in [![Open In Jupyter](https://nbviewer.jupyter.org/github/devsteppe/Python-Intro-to-DS/blob/master/week_01/seminar.ipynb).
 
 #### Embedding space walk
 ![embedding_space_walk](https://raw.githubusercontent.com/yandexdataschool/nlp_course/master/resources/embedding_space_walk.gif)
