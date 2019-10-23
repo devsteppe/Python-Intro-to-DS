@@ -9,13 +9,13 @@ The practice for this week takes place in notebooks. Just open them and follow i
 
 Unless explicitly said otherwise, all subsequent weeks follow the same pattern (notebook with instructions).
 
-If you have any difficulties with notebooks, just open them in [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/master/week01_embeddings/seminar.ipynb).
+If you have any difficulties with notebooks, just open them in [Open In Jupyter](https://nbviewer.jupyter.org/github/devsteppe/Python-Intro-to-DS/blob/master/week_01/seminar.ipynb).
 
 #### Some Image or GIF
-![embedding_space_walk](https://raw.githubusercontent.com/yandexdataschool/nlp_course/master/resources/embedding_space_walk.gif)
+
 
 ### More materials (optional)
-* On hierarchical & sampled softmax estimation for word2vec [page](http://ruder.io/word-embeddings-softmax/)
+*
 
 ### Related articles
 
