@@ -6,7 +6,7 @@ Here should be the topic navigations, instructions and links to some useful reso
 The practice for this week takes place in notebooks. Just open them and follow instructions from there.
 * __Seminar:__ `./seminar.ipynb`
 * __Homework:__ `./homework.ipynb`
-* __Lecture Slides__ [Drive](https://drive.google.com/open?id=1QO07Pv-GtfIRYddBUfXp3qS5DUfV0sbCZb5PVNX0Rp8)
+* __Lecture Slides__ [in Google Drive](https://drive.google.com/open?id=1QO07Pv-GtfIRYddBUfXp3qS5DUfV0sbCZb5PVNX0Rp8)
 
 Unless explicitly said otherwise, all subsequent weeks follow the same pattern (notebook with instructions).
 
