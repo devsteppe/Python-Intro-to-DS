@@ -1,0 +1,507 @@
+<html lang="en" class="gr__deeplearning_cs_cmu_edu"><head>
+    <meta charset="UTF-8">
+   <!--  <meta http-equiv="refresh" content="5"> -->
+    <title>Python and Intro to Data Science</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,300italic" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body data-gr-c-s-loaded="true"><div class="container titlebar">
+    <div class="row">
+        <!--div class="titlebar-img title-col vcenter">
+           <img id="logo" src="./img/brain.png">
+           </div-->
+        <div class="title-col vcenter" style="color:#A80000;font-weight:bold;text-align:center;width:100%">
+            <div class="title"><b></b>Python and Intro to Data Science</div>
+            <div class="subtitle"><i>Spring 2020</i></div>
+        </div>
+    </div>
+</div>
+
+
+<div class=" container">
+
+    <!-- <div class="row"> -->
+
+        <!-- <h2> Bulletin and Active Deadlines </h2> -->
+        <!-- <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Assignment</th>
+                <th>Deadline</th>
+                <th>Description</th>
+                <th>Links</th>
+            </tr>
+            </thead>
+            <tbody>
+	    <tr>
+                <td>Homework 2 Part 1</td>
+                <td>October 20th, 2019</td>
+                <td>Convolutional Neural Networks</td>
+                <td>
+					<a href="document/homework/homework2.tar.gz">Handout (*.targ.gz)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Homework 2 Part 2</td>
+                <td>October 20th, 2019</td>
+                <td>Face Recognition: Classification and Verification</td>
+                <td>
+                   <a href="https://www.kaggle.com/c/11785-f19-hw2p2-classification/overview">Kaggle-classification</a> <br>
+                   <a href="https://www.kaggle.com/c/11785-f19-hw2p2-verification/overview">Kaggle-verification</a>
+                </td>
+            </tr>
+	    <tr>
+                <td>Homework 3 part 1</td>
+                <td>October 21st, 2019</td>
+                <td>Recurrent Neural Networks</td>
+                <td>
+                     <a href="document/homework/homework3.tar.gz">Handout (*.targ.gz)</a>
+                </td>
+	    </tr>
+            <tr>
+                <td>Homework 3 part 2</td>
+                <td>October 21st, 2019</td>
+                <td>Connectionist Temporal Classification</td>
+                <td>
+                    <a href="https://www.kaggle.com/c/homework-3-part-2-11-785-fall-2019/overview">Kaggle</a><br>
+                    <a href="#">Code Submission Form</a>
+                </td>
+            </tr>
+
+
+
+            </tbody>
+        </table> -->
+
+        <!-- <p style="margin-top:75px;">
+            “Deep Learning” systems, typified by deep neural networks, are increasingly taking over all AI tasks, ranging from language understanding, and speech and image recognition, to machine translation, planning, and even game playing and autonomous driving. As a result, expertise in deep learning is fast changing from an esoteric desirable to a mandatory prerequisite in many advanced academic settings, and a large advantage in the industrial job market.
+        </p>
+        <p> In this course we will learn about the basics of deep neural networks, and their applications to various AI tasks. By the end of the course, it is expected that students will have significant familiarity with the subject, and be able to apply Deep Learning to a variety of tasks. They will also be positioned to understand much of the current literature on the topic and extend their knowledge through further study.</p>
+        <p>If you are only interested in the lectures, you can watch them on the YouTube channel listed below.
+        </p><h3>Course description from student point of view</h3>
+        <p>The course is well rounded in terms of concepts. It helps us understand the fundamentals of Deep Learning. The course starts off gradually with MLPs and it progresses into the more complicated concepts such as attention and sequence-to-sequence models. We get a complete hands on with PyTorch which is very important to implement Deep Learning models. As a student, you will learn the tools required for building Deep Learning models. The homeworks usually have 2 components which is Autolab and Kaggle. The Kaggle components allow us to explore multiple architectures and understand how to fine-tune and continuously improve models. The task for all the homeworks were similar and it was interesting to learn how the same task can be solved using multiple Deep Learning approaches. Overall, at the end of this course you will be confident enough to build and tune Deep Learning models.</p>
+<p><a href="http://deeplearning.cs.cmu.edu/document/extra/TAs.html"> Acknowledgments</a></p>
+
+        <h3>Your Supporters</h3>
+        <p><b style="color:#A80000;">Instructor:</b></p>
+        <ul style="margin-top:-10px;">
+            <li><b>Bhiksha Raj</b> : bhiksha@cs.cmu.edu</li>
+        </ul>
+        <p>
+            <b style="color:#A80000;">TAs:</b>
+        </p><ul>
+            <li><b>Aishwarya Reganti</b>: areganti@andrew.cmu.edu</li>
+            <li><b>Amit Chahar</b>: achahar@andrew.cmu.edu</li>
+            <li><b>Ethan Xuanyue Yang</b>: xuanyuey@andrew.cmu.edu</li>
+            <li><b>Hanna Moazam</b>: hmoazam@andrew.cmu.edu</li>
+            <li><b>Hariharan Muralidharan</b>: hmuralid@andrew.cmu.edu</li>
+            <li><b>Kangrui Ruan (Darren)</b>: kangruir@andrew.cmu.edu</li>
+            <li><b>Liwei Cai</b>: liweicai@andrew.cmu.edu</li>
+            <li><b>Pallavi Sharma</b>: psharma2@andrew.cmu.edu</li>
+            <li><b>Parth Shah</b>: pvshah@andrew.cmu.edu</li>
+            <li><b>Wendy Ebanks</b>: wvelasqu@andrew.cmu.edu</li>
+            <li><b>(Kigali) Aime Musangamfura</b>: amusanga@andrew.cmu.edu</li>
+            <li><b>(Kigali) Natnael Daba</b>: ndaba@andrew.cmu.edu</li>
+            <li><b>(Silicon Valley) Bonan Jin</b>: bonanj@andrew.cmu.edu</li>
+            <li><b>(Silicon Valley) Joseph Konan</b>: jkonan@andrew.cmu.edu</li>
+        </ul>
+        <h3>Pittsburgh Schedule (Eastern Time)</h3>
+        <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 9:00 a.m. - 10:20 a.m. @ DH A302</p>
+        <p><b style="color:#A80000;">Recitation:</b> Friday, 9.00am-10.20am @ DH A302 </p>
+        <b style="color:#A80000;">Office hours:</b> -->
+
+        <!--<table style="height: 123px; width: 540.333px;" border="0">-->
+	<!-- <table class="table table-striped table-bordered">
+	  <tbody>
+	    <tr>
+	      <td style="width: 100px; text-align: center;"><strong>Day</strong></td>
+	      <td style="width: 136px; text-align: center;"><strong>Time</strong></td>
+	      <td style="width: 110px; text-align: center;"><strong>Location</strong></td>
+	      <td style="width: 173.333px; text-align: center;"><strong>TA</strong></td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;" rowspan="3">Monday</td>
+	      <td style="width: 136px;">1-3 pm</td>
+	      <td style="width: 110px;">GHC 6708</td>
+	      <td style="width: 173.333px;">Ethan Xuanyue Yang</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 136px;">4-5 pm</td>
+	      <td style="width: 110px;">GHC 6708</td>
+	      <td style="width: 173.333px;">Kangrui Ruan (Darren)</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 136px;">5-6 pm</td>
+	      <td style="width: 110px;">LTI Commons</td>
+	      <td style="width: 173.333px;">Liwei Cai</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;" rowspan="2">Tuesday</td>
+	      <td style="width: 136px;">12-2 pm</td>
+	      <td style="width: 110px;">GHC 6404</td>
+	      <td style="width: 173.333px;">Pallavi Sharma</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 136px;">5-6 pm</td>
+	      <td style="width: 110px;">LTI Commons</td>
+	      <td style="width: 173.333px;">Liwei Cai</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;" rowspan="2">Wednesday</td>
+	      <td style="width: 136px;">1-3 pm</td>
+	      <td style="width: 110px;">GHC 6708</td>
+	      <td style="width: 173.333px;">Hanna Moazam</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 136px;">3-4 pm</td>
+	      <td style="width: 110px;">GHC 6404</td>
+	      <td style="width: 173.333px;">Hariharan Muralidharan &amp; Wendy Ebanks</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;">Thursday</td>
+	      <td style="width: 136px;">1-3 pm</td>
+	      <td style="width: 110px;">LTI Commons</td>
+	      <td style="width: 173.333px;">Aishwarya Reganti</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;" rowspan="2">Friday</td>
+	      <td style="width: 136px;">10.30-11.30 am</td>
+	      <td style="width: 110px;">GHC 5417</td>
+	      <td style="width: 173.333px;">Kangrui Ruan (Darren)</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 136px;">3-4 pm</td>
+	      <td style="width: 110px;">GHC 6404</td>
+	      <td style="width: 173.333px;">Hariharan Muralidharan &amp; Wendy Ebanks</td>
+	    </tr>
+	    <tr>
+	      <td style="width: 100px;">Saturday</td>
+	      <td style="width: 136px;">4-6 pm</td>
+	      <td style="width: 110px;">GHC 5417</td>
+	      <td style="width: 173.333px;">Amit Chahar &amp; Parth Shah</td>
+	    </tr>
+	  </tbody>
+	</table> -->
+
+        <!-- <h3>Kigali Schedule (Central Africa Time)</h3>
+        <p><b style="color:#A80000;">Lecture:</b> Monday and Wednesday, 3:00 p.m. – 4:20 p.m. @ F305 DLR</p>
+        <b style="color:#A80000;">Office hours:</b>
+        <ul>
+            <li><b>Aime Musangamfura</b>: Monday and Wednesday, 6:00 p.m. – 8:00 p.m. @ TA Office B209</li>
+            <li><b>Natnael Daba</b>: Tuesday, 6:00 p.m. – 8:30 p.m. and Thursday 6:00 p.m. - 8:00 p.m. @ TA Office B209</li>
+        </ul>
+
+        <h3>Silicon Valley Schedule (Pacific Time)</h3>
+        <b style="color:#A80000;">Office hours:</b>
+        <ul>
+            <li><b>Bonan Jin</b>: Wednesday, 1:00 p.m. – 3:00 p.m. @ B23, Room 107</li>
+            <li><b>Joseph Konan</b>: Monday-Sunday, 6:00 p.m. – 7:00 p.m. @ B23, Room 107</li>
+        </ul>
+
+        <h3>Prerequisites</h3>
+        <ol>
+            <li>We will be using one of several toolkits (the primary toolkit for recitations/instruction is PyTorch). The toolkits are largely programmed in Python. You will need to be able to program in at least one of these languages. Alternately, you will be responsible for finding and learning a toolkit that requires programming in a language you are comfortable with, </li>
+            <li>You will need familiarity with basic calculus (differentiation, chain rule), linear algebra and basic probability. </li>
+        </ol>
+        <h3>Units</h3>
+        <p>11-785 is a graduate course worth 12 units. 11-485 is an undergraduate course worth 9 units.</p> -->
+    <!-- </div> -->
+<!-- </div> -->
+
+<!-- <div class="container">
+    <div class="row">
+        <h2>Course Work</h2>
+        <h3>Grading</h3>
+        <p>Grading will be based on weekly quizzes (24%), homeworks (51%) and a course  project (25%).
+        </p><div>
+            <table class="rules-table">
+                <tbody><tr class="rules-table-header">
+                    <td></td>
+                    <td></td>
+                    <td><b>Policy</b></td>
+                </tr>
+                <tr>
+                    <td><b>Quizzes</b></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        There will be weekly quizzes.
+                        <ul>
+                            <li> There are 14 quizzes in all. We will retain your best 12 scores.
+                            </li><li> Quizzes will generally (but not always) be released on Friday and due 48 hours later.
+                            </li><li> Quizzes are scored by the number of correct answers.
+                            </li><li>
+                                <b>Quizzes will be worth 24% of your overall score.</b>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr> <td><b>Assignments</b></td> <td></td><td>There will be five assignments in all. Assignments will include <i>autolab</i> components, where you must complete designated tasks, and a <i>kaggle</i> component where you compete with your colleagues.
+                    <ul>
+                        <li> Autolab components are scored according to the number of correctly completed parts.
+                        </li><li> We will post performance cutoffs for A, B, C, D and F for Kaggle competitions. These will translate to scores of 100, 80, 60, 40 and 0 respectively. Scores will be interpolated linearly between these cutoffs.
+                        </li><li> Assignments will have a “preliminary submission deadline”, an “on-time submission deadline” and a “late-submission deadline.”
+                            <ul>
+                                <li> <b>Early submission deadline:</b> You are required to make at least one submission to Kaggle by this deadline. People who miss this deadline will automatically lose 10% of subsequent marks they may get on the homework. This is intended to encourage students to begin working on their assignments early.
+                                </li><li> <b>On-time deadline:</b> People who submit by this deadline are eligible for up to five bonus points. These points will be computed by interpolation between the A cutoff and the highest performance obtained for the HW. The highest performance will get 105.
+                                </li><li> <b>Late deadline:</b> People who submit after the on-time deadline can still submit until the late deadline. There is a 10% penalty applied to your final score, for submitting late.
+                                </li><li> <b>Slack days:</b> Everyone gets up to 7 slack days, which they can distribute across all their homeworks.  Once you use up your slack days you will fall into the late-submission category by default. Slack days are accumulated over <i>all</i> parts of <i>all</i> homeworks, except HW0, to which no slack applies.
+                                </li><li> <b>Kaggle scoring:</b> We will use <i>max(max(on-time score), max(slack-day score), .0.9*max(late-submission score))</i> as your final score for the HW. If this happens to be a slack-days submission, slack days corresponding to the selected submission will be counted.
+                            </li></ul>
+                        </li><li> <b>Assignments carry 51% of your total score</b>. HW0 is worth 1%, while each of the subsequent four are worth 12.5%.
+                    </li></ul></td></tr>
+                <tr><td><b>Project</b></td><td></td><td>All students are required to do a course project. <b>The project is worth 25% of your grade</b></td></tr>
+                <tr> <td><b>Final grade</b></td><td></td> <td>The end-of-term grade is curved. Your overall grade will depend on your performance relative to your classmates.</td></tr>
+                <tr> <td><b>Pass/Fail</b></td><td></td> <td>Students registered for pass/fail must complete all quizzes, HWs and the project. A grade equivalent to B- is required to pass the course.</td></tr>
+                <tr> <td><b>Auditing</b></td><td></td> <td>Auditors are not required to complete the course project, but must complete all quizzes and homeworks. We encourage doing a course project regardless.</td></tr>
+
+                <tr class="rules-table-bottom">
+                    <td></td>
+                    <td></td>
+                    <td><b>End Policy</b></td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <h3>Piazza: Discussion Board</h3>
+        <p><a href="http://piazza.com/cmu/fall2019/1178511485">Piazza</a> is what we use for discussions. You should be automatically signed up if you're enrolled at the start of the semester. If not, please sign up.</p>
+
+        <h3>AutoLab: Software Engineering</h3>
+        <p><a href="https://autolab.andrew.cmu.edu/courses/11785-f19">AutoLab</a> is what we use to test your understand of low-level concepts, such as engineering your own libraries, implementing important algorithms, and developing optimization methods from scratch.</p>
+
+        <h3>Kaggle: Data Science</h3>
+        <p><a href="https://kaggle.com">Kaggle</a> is where we test your understanding and ability to extend neural network architectures discussed in lecture. Similar to how AutoLab shows scores, Kaggle also shows scores, so don't feel intimidated -- we're here to help. We work on hot AI topics, like speech recognition, face recognition, and neural machine translation.</p>
+
+        <h3>YouTube: Lecture and Reciation Recordings</h3>
+        <p><a href="https://www.YouTube.com/channel/UC8hYZGEkI2dDO8scT8C5UQA?view_as=subscriber">YouTube</a> is where all lecture and recitation recordings will be uploaded. Links to individual lectures and recitations will also be posted below as they are uploaded. Videos marked “Old“ are not current, so please be aware of the video title.</p>
+        <p> CMU students can also access the videos <a href="https://mediaservices.cmu.edu/media/Introduction+to+Deep+Learning/1_8eaf2eny">Live from Media Services</a> or <a href="https://mediaservices.cmu.edu/channel/Introduction%2Bto%2BDeep%2BLearning_Fall%2B2019/129472801">Recorded from Media Services.</a></p>
+
+        <h3>Books and Other Resources</h3>
+        <p>The course will not follow a specific book, but will draw from a number of sources. We list relevant books at the end of this page. We will also put up links to relevant reading material for each class. Students are expected to familiarize themselves with the material before the class. The readings will sometimes be arcane and difficult to understand; if so, do not worry, we will present simpler explanations in class.</p>
+
+        <p>You can also find a nice catalog of models that are current in the literature <a href="http://www.datasciencecentral.com/profiles/blogs/concise-visual-summary-of-deep-learning-architectures">here</a>. We expect that you will be in a position to interpret, if not fully understand many of the architectures on the wiki and the catalog by the end of the course.</p>
+
+        <h3>Academic Integrity</h3>
+        <div>
+            You are expected to comply with the <a href="http://www.cmu.edu/policies/documents/Cheating.html">University Policy on Academic Integrity and Plagiarism</a>.
+            <ul>
+                <li>You are allowed to talk with and work with other students on homework assignments.</li>
+                <li>You can share ideas but not code. You should submit your own code.</li>
+            </ul>
+            Your course instructor reserves the right to determine an appropriate penalty based on the violation of academic dishonesty that occurs. Violations of the university policy can result in severe penalties including failing this course and possible expulsion from Carnegie Mellon University. If you have any questions about this policy and any work you are doing in the course, please feel free to contact your instructor for help.
+        </div>
+    </div>
+</div> -->
+<div class="container">
+    <div class="row">
+        <h2>Tentative Schedule of Lectures</h2>
+        <div class="">
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Lecture</th>
+                    <th>Date</th>
+                    <th>Topics</th>
+                    <th>Lecture Slides</th>
+                    <th>Additional Readings (if any)</th>
+                    <th>Homework &amp; Assignments</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>0</td> <!--Lecture Number-->
+                    <td>-</td> <!--Date-->
+                    <td><ul> <!--Topic List-->
+                        <li>Знакомство с командой</li>
+                        <li>Логистика курса</li>
+                        <li>Почему Python?</li>
+                        <li>Установка и первые шаги</li>
+                        <li>Командная строка, IDE</li>
+                    </ul></td>
+                    <td>
+                    </td> <!--Lecture Slides-->
+                    <td>
+                        <a href="https://www.python.org/">Python.org</a>
+                    </td> <!--Readings-->
+                    <td>
+                    </td> <!--Quizzes & Assignments-->
+                </tr>
+                <tr>
+                    <td>1</td> <!--Lecture Number-->
+                    <td>-</td> <!--Date-->
+                    <td><ul> <!--Topic List-->
+                        <li>Введение в Python</li>
+                        <li>Модули и библиотеки</li>
+                        <li>Синтаксис и ошибки</li>
+                        <li>Переменные и базовые типы данных</li>
+                        <!-- <li></li> -->
+                    </ul></td>
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_01">Материалы недели (GitHub)</a><br>
+                    </td> <!--Lecture Slides-->
+                    <td>
+
+                    </td> <!--Readings-->
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_01/homework.ipynb">Homework 1 (*.ipynb)</a><br>
+                    </td> <!--Quizzes & Assignments-->
+                </tr>
+                <tr>
+                    <td>2</td> <!--Lecture Number-->
+                    <td>-</td> <!--Date-->
+                    <td><ul> <!--Topic List-->
+                        <li>Арифметические и логические операции</li>
+                        <li>Условные конструкции</li>
+                        <li>Циклические конструкции</li>
+                    </ul></td>
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_02">Материалы недели (GitHub)</a><br>
+                    </td> <!--Lecture Slides-->
+                    <td>
+                      <li><a href="https://www.w3schools.com/python/python_operators.asp">Python Operators</a></li>
+                      <li><a href="https://developers.google.com/edu/python/">Python by Google</a></li>
+                    </td> <!--Readings-->
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_02/homework.ipynb">Homework 2 (*.ipynb)</a><br>
+                    </td> <!--Quizzes & Assignments-->
+                </tr>
+                <tr>
+                    <td>3</td> <!--Lecture Number-->
+                    <td>-</td> <!--Date-->
+                    <td><ul> <!--Topic List-->
+                        <li>Функции</li>
+                        <li>Области видимости (Scope: local & global)</li>
+                        <li>Рекурсии</li>
+                    </ul></td>
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_03">Материалы недели (GitHub)</a><br>
+                    </td> <!--Lecture Slides-->
+                    <td>
+
+                    </td> <!--Readings-->
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_03/homework.ipynb">Homework 3 (*.ipynb)</a><br>
+                    </td> <!--Quizzes & Assignments-->
+                </tr>
+                <tr>
+                    <td>4</td> <!--Lecture Number-->
+                    <td>-</td> <!--Date-->
+                    <td><ul> <!--Topic List-->
+                        <!-- <li>Введение в Python</li> -->
+                    </ul></td>
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_04">Материалы недели (GitHub)</a><br>
+                    </td> <!--Lecture Slides-->
+                    <td>
+
+                    </td> <!--Readings-->
+                    <td>
+                        <a href="https://github.com/devsteppe/Python-Intro-to-DS/tree/master/week_04/homework.ipynb">Homework 4 (*.ipynb)</a><br>
+                    </td> <!--Quizzes & Assignments-->
+                </tr>
+
+                </tbody>
+            </table>
+
+            <h2> Homework Schedule </h2>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Part</th>
+                    <th>Topics</th>
+                    <th>Release Date</th>
+                    <th>Early-submission Deadline</th>
+                    <th>On-time Deadline</th>
+                    <th>Links </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td>HW0</td> <!--Number-->
+                    <td>—</td> <!--Part-->
+                    <td></td> <!--Topics-->
+                    <td>August 12</td> <!--Release Date-->
+                    <td><!--Monnth Day--></td> <!--Early-submission Deadline-->
+                    <td>September 8</td> <!--On-time Deadline-->
+                    <td> <!--Links-->
+                        <a href="document/homework/homework0.tar.gz"> Handout (*.tar.gz) </a><br>
+                        <!--<a href=""> *.pdf </a> <br/>-->
+                        <!--<a href=""> *.tar.gz </a> <br/>-->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+          <h2> Course Project Timeline</h2>
+            <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Assignment</th>
+                <th>Deadline</th>
+                <th>Description</th>
+                <th>Links</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Team Formation</td> <!--Assignment-->
+                <td>September 23rd, 2019</td> <!--Deadline-->
+                <td> Teams will be formed in groups of four each <br>
+					*If you do not have a team after this point, you will be grouped randomly
+				</td>
+				<td><a href="https://docs.google.com/forms/d/e/1FAIpQLSeecZ0O28Oj8BA0oScXHQqJblMY5X5c_3I2nxI1FP392kndww/viewform">Team Submission Form</a></td>
+            </tr>
+			 <tr>
+                <td>Project Proposal</td> <!--Assignment-->
+                <td>October 7th, 2019</td> <!--Deadline-->
+                <td><a href="document/project/Project_Proposal_Guidelines.pdf">Project Description Guidelines</a></td> <!--Description-->
+                <td>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAk-Z7FwV-o_8aYGznb5Nz2_a56MviMdhteHqYPmbIgrFsug/viewform?usp=sf_link">Proposal Submission</a><br>
+                </td>
+            </tr>
+			 <tr>
+                <td>Midterm Report</td> <!--Assignment-->
+                <td>Nov. 11th, 2019</td> <!--Deadline-->
+
+<td> <a href="https://www.overleaf.com/6348355873chbbypfsvswb">report template</a> is provided to detail your initial experiments </td> <!--Description-->
+                <td> <!--Links-->
+                    <a href"#"="">Mid-Report Submission Form</a>
+                </td>
+            </tr>
+<tr>
+                <td>Poster Presentation</td> <!--Assignment-->
+                <td>(Tentative) Dec. (3 - 5), 2019</td> <!--Deadline-->
+                <td>It will be a final poster session of the different groups in all three campuses</td> <!--Description-->
+                <td> <!--Links-->
+                    <a href="#">Poster guidelines </a><br>
+                </td>
+            </tr>
+			<tr>
+                <td>Final Project Report</td> <!--Assignment-->
+                <td> (Tentative) Dec. (6-7), 2019  </td> <!--Deadline-->
+                <td>A <a href="#">final project template</a> This should be the final document for the course project</td> <!--Description-->
+                <td> <!--Links-->
+                    <a href="#"> Final Project Submission Form</a><br>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- <h3><a href="slides/ProjectIdeas.pptx">Some ideas for projects</a></h3> -->
+    </div>
+</div>
+<div class=" container">
+    <div class="row">
+    </div>
+</div>
+
+
+</body></html>
