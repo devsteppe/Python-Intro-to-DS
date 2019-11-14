@@ -1,6 +1,6 @@
 Here should be the topic navigations, instructions and links to some useful resources
 
-### Functions
+### Containers
 
 ### Practice & homework
 The practice for this week takes place in notebooks. Just open them and follow instructions from there.
